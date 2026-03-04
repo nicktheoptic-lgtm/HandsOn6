@@ -15,11 +15,13 @@ services:
   db:
     image: mysql:8.0
     restart: always
+    ports:
+      - "3307:3306"
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
       MYSQL_DATABASE: semester_project
       MYSQL_USER: wpi_user
-      MYSQL_PASSWORD: wpi_password
+      MYSQL_PASSWORD: wpi
     volumes:
       # Persistence: Data stays if container is rebuilt
       - db-data:/var/lib/mysql
