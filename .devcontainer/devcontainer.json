@@ -1,26 +1,21 @@
 {
-    "name": "wpi",
+    "name": "WPI-Project",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
-    "workspaceFolder": "/workspaces/wpi509",
-    "runArgs": [
-        "--add-host",
-        "host.docker.internal:host-gateway"
-    ],
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "customizations": {
         "vscode": {
-            "extensions": [
-                "editorconfig.editorconfig",
-                "vscjava.vscode-java-pack",
-                "cweijan.vscode-mysql-client2",
-                "mtxr.sqltools",
-                "mtxr.sqltools-driver-mysql"
-            ],
             "settings": {
                 "editor.formatOnSave": true
-            }
+            },
+            "extensions": [
+                "editorconfig.editorconfig",
+                "ms-dotnettools.csharp",
+                "ms-dotnettools.csdevkit",
+                "cweijan.vscode-mysql-client2"
+            ]
         }
     },
-    "remoteUser": "codespace",
-    "postCreateCommand": "sudo apt update && sudo apt install -y default-mysql-client"
+    "remoteUser": "vscode",
+    "postCreateCommand": "sudo apt-get update || true && sudo apt-get install -y default-mysql-client && dotnet restore"
 }

@@ -2,36 +2,34 @@ version: '3.8'
 
 services:
   app:
-    # Your requested Universal image
-    image: mcr.microsoft.com/devcontainers/universal:linux
+    build:
+      context: ..
+      dockerfile: Dockerfile
     volumes:
-      - ../:/workspaces/wpi509:cached
+      - ..:/workspaces:cached
+    # Keeps the container running so you can work in the terminal
     command: sleep infinity
+    networks:
+      - wpi-network
     depends_on:
       - db
-    networks:
-      - wpi-net
 
   db:
     image: mysql:8.0
     restart: always
-    ports:
-      - "3307:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: semester_project
-      MYSQL_USER: wpi_user
-      MYSQL_PASSWORD: wpi
+      MYSQL_ROOT_PASSWORD: a
+      MYSQL_DATABASE: dev
+    ports:
+      - "3306:3306"
     volumes:
-      # Persistence: Data stays if container is rebuilt
-      - db-data:/var/lib/mysql
-      # Auto-Import: Loads your .sql file from the 'data' folder on first run
-      - ../data:/docker-entrypoint-initdb.d
+      - mysql-data:/var/lib/mysql
     networks:
-      - wpi-net
+      - wpi-network
 
 networks:
-  wpi-net:
+  wpi-network:
+    driver: bridge
 
 volumes:
-  db-data:
+  mysql-data:
