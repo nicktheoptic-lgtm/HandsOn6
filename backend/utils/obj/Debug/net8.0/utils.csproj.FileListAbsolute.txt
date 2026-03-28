@@ -1,0 +1,12 @@
+/workspaces/backend/utils/bin/Debug/net8.0/utils.deps.json
+/workspaces/backend/utils/bin/Debug/net8.0/utils.dll
+/workspaces/backend/utils/bin/Debug/net8.0/utils.pdb
+/workspaces/backend/utils/obj/Debug/net8.0/utils.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/backend/utils/obj/Debug/net8.0/utils.AssemblyInfoInputs.cache
+/workspaces/backend/utils/obj/Debug/net8.0/utils.AssemblyInfo.cs
+/workspaces/backend/utils/obj/Debug/net8.0/utils.csproj.CoreCompileInputs.cache
+/workspaces/backend/utils/obj/Debug/net8.0/utils.sourcelink.json
+/workspaces/backend/utils/obj/Debug/net8.0/utils.dll
+/workspaces/backend/utils/obj/Debug/net8.0/refint/utils.dll
+/workspaces/backend/utils/obj/Debug/net8.0/utils.pdb
+/workspaces/backend/utils/obj/Debug/net8.0/ref/utils.dll

@@ -1,0 +1,16 @@
+/workspaces/backend/model/bin/Debug/net8.0/model.deps.json
+/workspaces/backend/model/bin/Debug/net8.0/model.dll
+/workspaces/backend/model/bin/Debug/net8.0/model.pdb
+/workspaces/backend/model/bin/Debug/net8.0/utils.dll
+/workspaces/backend/model/bin/Debug/net8.0/utils.pdb
+/workspaces/backend/model/obj/Debug/net8.0/model.csproj.AssemblyReference.cache
+/workspaces/backend/model/obj/Debug/net8.0/model.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/backend/model/obj/Debug/net8.0/model.AssemblyInfoInputs.cache
+/workspaces/backend/model/obj/Debug/net8.0/model.AssemblyInfo.cs
+/workspaces/backend/model/obj/Debug/net8.0/model.csproj.CoreCompileInputs.cache
+/workspaces/backend/model/obj/Debug/net8.0/model.sourcelink.json
+/workspaces/backend/model/obj/Debug/net8.0/model.csproj.Up2Date
+/workspaces/backend/model/obj/Debug/net8.0/model.dll
+/workspaces/backend/model/obj/Debug/net8.0/refint/model.dll
+/workspaces/backend/model/obj/Debug/net8.0/model.pdb
+/workspaces/backend/model/obj/Debug/net8.0/ref/model.dll
